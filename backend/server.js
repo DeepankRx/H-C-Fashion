@@ -14,7 +14,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-let URI = "mongodb://localhost/natureBliss"
+let URI = "mongodb+srv://deepank:passwordforbot@cluster0.wopim.mongodb.net/h&c?retryWrites=true&w=majority"
 mongoose.connect(process.env.MONGODB_URL || URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
